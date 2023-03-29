@@ -1,0 +1,18 @@
+Static
+ip route <network IP need to go> <subnet mask> <next_hop>
+
+
+RIPv1
+
+router rip
+network <network IP connected> 
+
+RIPv2
+
+router rip
+version 2
+network <network IP connected>
+
+OSPF
+router ospf 1
+network <network IP connected> <reverse subnet> area 0
